@@ -62,7 +62,7 @@ allprojects {
 artifactory {
     publish {
         repository {
-            repoKey = 'default-gradle-dev-local'
+            repoKey = 'gradle-test-gradle-dev-local'
             maven = true
         }
         defaults {
@@ -73,7 +73,7 @@ artifactory {
     }
     resolve {
         repository {
-            repoKey = 'default-gradle-dev'
+            repoKey = 'gradle-test-gradle-dev'
             maven = true
 
         }
