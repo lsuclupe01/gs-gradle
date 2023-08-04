@@ -35,7 +35,7 @@ dependencies {
 publishing {
     publications {
         jar(MavenPublication) {
-            groupId 'lsuclupe'
+            //groupId 'lsuclupe'
             artifactId 'gs-gradle'
             version '1.0'
             from components.java
@@ -58,11 +58,11 @@ buildscript {
 allprojects {
     apply plugin: "com.jfrog.artifactory"
 }
-
+//repoKey = 'gradle-test-gradle-dev-local'
 artifactory {
     publish {
         repository {
-            repoKey = 'gradle-test-gradle-dev-local'
+            repoKey = 'gradle-test-gradle-dev'
             maven = true
         }
         defaults {
